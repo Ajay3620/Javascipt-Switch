@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <script>
+        function check()
+        {
+            var a=parseFloat(document.getElementById("n1").value);
+            var b=parseFloat(document.getElementById("n2").value);
+            var c=parseFloat(document.getElementById("op").value);
+            var d;
+
+            switch(c)
+            {
+                case 1:
+                    d=a+b;
+                break;
+                
+                case 2:
+                    d=a-b;
+                break;
+                
+                case 3:
+                    d=a*b;
+                break;
+                
+                case 4:
+                    d=a/b;
+                break;
+                
+                default:
+                    alert("chack the opertor value");
+                
+                }
+                document.getElementById("answer").innerHTML=d;
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+        Enter num1:<input type="number" id="n1">
+        <br><br>
+        Enter num2:<input type="number" id="n2">
+        <br><br>
+        (1.add 2.sub 3.mul 4.div)<br>
+        Enter the operat number:<input type="number" id="op">
+        <br><br>
+        <input type="button"id="but" onclick="check()" value="submit"><br><br>
+       <table><tr><td>
+        Answer:</td><td><div id="answer"></div></td>
+    </tr>
+    </table>
+</body>
+</html>

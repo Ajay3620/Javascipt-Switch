@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+<script>
+
+function verify ()
+{
+    var value1,value2,menu;
+    value1=parseFloat(document.getElementById("n1").value);
+    value2=parseFloat(document.getElementById("n2").value);
+    menu=parseInt(document.getElementById("m1").value);
+
+document.write("first value"+value1+"<br>");
+
+document.write("second value"+value2+"<br>");
+
+document.write("menu optoin"+menu+"<br>");
+
+switch(menu){
+case 1:
+document.write("<br>add value: "+(value1+value2));
+break;
+
+case 2:
+document.write("<br>sub value: "+(value1-value2));
+break;
+
+case 3:
+document.write("<br>mul value: "+(value1*value2));
+break;
+
+case 4:
+document.write("<br>div value: "+(value1/value2));
+break;
+
+default:
+document.write("<br>pls check");
+break;
+
+}
+
+}
+
+</script>
+
+
+</head>
+<body>
+<h2>Calculater</h2> 
+<br>
+enter num 1 : <input type="number" id="n1">   <br><br>
+enter num 2 : <input type="number" id="n2">     <br><br>
+enter the option number : <input type="number" id="m1"> <br><br>
+<input type="button" id="but" value="check" onclick="verify();">
+
+</body>
+</html>
